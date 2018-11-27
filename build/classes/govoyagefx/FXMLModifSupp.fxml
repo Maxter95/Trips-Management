@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="govoyagefx.FXMLModifSuppController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/app.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab1" layoutX="513.0" layoutY="-8.0" prefHeight="416.0" prefWidth="787.0">
+        <columns>
+            <TableColumn fx:id="tcID" prefWidth="53.0" text="Id" />
+          <TableColumn fx:id="tcAdresse" prefWidth="145.0" text="Adresse" />
+            <TableColumn fx:id="tcDescription" prefWidth="183.0" text="Description" />
+            <TableColumn fx:id="tcType" prefWidth="134.0" text="Type" />
+            <TableColumn fx:id="tcPrix" minWidth="0.0" prefWidth="115.0" text="Prix" />
+          <TableColumn fx:id="tcDisponiblite" prefWidth="162.0" text="Disponibilite" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnModif" layoutX="479.0" layoutY="535.0" minHeight="70.0" onAction="#modif" prefWidth="90.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnSupp" layoutX="569.0" layoutY="535.0" minHeight="70.0" onAction="#supp" prefWidth="90.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtDescription" layoutX="172.0" layoutY="87.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDisponibilite" layoutX="172.0" layoutY="269.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtPrix" layoutX="172.0" layoutY="223.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtType" layoutX="172.0" layoutY="176.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAdresse" layoutX="172.0" layoutY="133.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnacc" layoutX="670.0" layoutY="535.0" minHeight="70.0" onAction="#acceuil" prefWidth="90.0" text="Acceuil">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtID" layoutX="172.0" layoutY="46.0" opacity="0.0">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField layoutX="172.0" opacity="0.09">
+         <font>
+            <Font size="22.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="recherche" layoutX="185.0" layoutY="535.0">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <Label layoutX="47.0" layoutY="105.0" prefHeight="27.0" prefWidth="119.0" text="Adresse" textFill="#065b06">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="284.0" text="Disponibilie" textFill="#065b06">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="243.0" text="Prix" textFill="#065b06">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="192.0" text="Type" textFill="#065b06">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="148.0" text="Description" textFill="#065b06">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="36.0" layoutX="372.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/magnifying-glass-145942_960_720.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

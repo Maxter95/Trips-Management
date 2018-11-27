@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="govoyagefx.Reservation_hebergementController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/app.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab1" prefHeight="426.0" prefWidth="668.0">
+        <columns>
+            <TableColumn fx:id="tcID" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="tcAdresse" prefWidth="114.0" text="Adresse" />
+            <TableColumn fx:id="tcDescription" prefWidth="116.0" text="Description" />
+          <TableColumn fx:id="tcType" prefWidth="85.0" text="Type" />
+          <TableColumn fx:id="tcPrix" prefWidth="120.99996948242188" text="Prix" />
+            <TableColumn fx:id="tcDisponiblite" prefWidth="157.0" text="Disponibilite" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="recherche" layoutX="795.0" layoutY="14.0" prefHeight="51.0" prefWidth="145.0">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnacc" layoutX="1072.0" layoutY="592.0" onAction="#acceuil" text="Accueil">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnRes" layoutX="1118.0" layoutY="111.0" onAction="#reserver_button" text="Reserver">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtIDU" layoutX="167.0" layoutY="486.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtIDH" layoutX="167.0" layoutY="548.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNOM" layoutX="592.0" layoutY="501.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNBN" layoutX="592.0" layoutY="548.0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="23.0" layoutY="500.0" text="Id Utilisateur" textFill="#1d5109">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="540.0" text="Id Hebergement" textFill="#1d5109">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="424.0" layoutY="555.0" text="Nombre de nuit" textFill="#1d5109">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="466.0" layoutY="493.0" text="Nom" textFill="#1d5109">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="721.0" layoutY="40.0" text="Recherche" />
+   </children>
+</AnchorPane>
